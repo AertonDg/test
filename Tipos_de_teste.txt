@@ -1,0 +1,105 @@
+
+# Resumo dos Tipos de Teste em Jest
+
+## 1. toBe
+- **Descrição**: Verifica se o valor é exatamente igual ao esperado (usando ===).
+- **Exemplo**:
+```js
+expect(2 + 2).toBe(4);
+```
+
+## 2. toEqual
+- **Descrição**: Verifica se objetos ou arrays são iguais, comparando suas propriedades.
+- **Exemplo**:
+```js
+expect({ a: 1 }).toEqual({ a: 1 });
+```
+
+## 3. toBeInstanceOf
+- **Descrição**: Verifica se o objeto é uma instância de uma classe específica.
+- **Exemplo**:
+```js
+expect(new Error()).toBeInstanceOf(Error);
+```
+
+## 4. toBeNull
+- **Descrição**: Verifica se o valor é `null`.
+- **Exemplo**:
+```js
+expect(null).toBeNull();
+```
+
+## 5. toBeUndefined
+- **Descrição**: Verifica se o valor é `undefined`.
+- **Exemplo**:
+```js
+expect(undefined).toBeUndefined();
+```
+
+## 6. toBeTruthy
+- **Descrição**: Verifica se o valor é considerado verdadeiro (truthy).
+- **Exemplo**:
+```js
+expect(true).toBeTruthy();
+```
+
+## 7. toBeFalsy
+- **Descrição**: Verifica se o valor é considerado falso (falsy).
+- **Exemplo**:
+```js
+expect(false).toBeFalsy();
+```
+
+## 8. toContain
+- **Descrição**: Verifica se um item está presente em um array ou iterável.
+- **Exemplo**:
+```js
+expect([1, 2, 3]).toContain(2);
+```
+
+## 9. toThrow
+- **Descrição**: Verifica se uma função lança um erro.
+- **Exemplo**:
+```js
+expect(() => { throw new Error("Error!") }).toThrow("Error!");
+```
+
+## 10. toHaveLength
+- **Descrição**: Verifica o comprimento de um array ou string.
+- **Exemplo**:
+```js
+expect([1, 2, 3]).toHaveLength(3);
+```
+
+## 11. toMatch
+- **Descrição**: Verifica se uma string corresponde a uma expressão regular.
+- **Exemplo**:
+```js
+expect("jest is cool").toMatch(/jest/);
+```
+
+## 12. toHaveProperty
+- **Descrição**: Verifica se um objeto tem uma propriedade com valor específico.
+- **Exemplo**:
+```js
+expect({ a: 1, b: 2 }).toHaveProperty("a", 1);
+```
+
+## 13. toBeGreaterThanOrEqual
+- **Descrição**: Verifica se o valor é maior ou igual ao esperado.
+- **Exemplo**:
+```js
+expect(10).toBeGreaterThanOrEqual(5);
+```
+
+
+
+
+Bom dia desenrolados e desenroladas, como conversado semana passada, hoje vocês vão fazer a primeira parte da prova pratica e a segunda será na quarta feira (09/10), para essa primeira parte vocês deverão usar o Jest e o Supertest, utilizando a API que usamos em sala.
+
+os testes são: 
+
+1) Não deve registrar um usuário sem a senha.
+2) Não deve registrar um usuário sem o email.
+3) Não deve registrar um usuário sem os dados.
+4) Deve logar corretamente.
